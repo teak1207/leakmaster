@@ -14,12 +14,12 @@ import java.util.Date;
 @Entity
 @ToString
 @Getter
-@Table(name = "board")
+@Table(name = "BOARD")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class BoardModel {
-
+//, columnDefinition =""
     @Id
-    @Column(name = "id")
+    @Column(name = "id" )
     private Long id;
 
     @Column(name = "title")

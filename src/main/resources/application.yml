@@ -3,13 +3,14 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: mysql://localhost:3306/testdb
-    username: rorot
+    url: jdbc:mysql://localhost:3306/testdb?serverTimezone=Asia/Seoul
+    username: root
     password: Osan2051102!
 
   jpa:
     hibernate:
       ddl-auto: validate
+
     generate-ddl: false
     show-sql: true
 
