@@ -17,4 +17,9 @@ public class BoardService {
         return repository.findAll();
     }
 
+    public BoardModel getBoard(Long id){
+
+        return repository.findById(id).orElseThrow();
+    }
+
 }
